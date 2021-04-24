@@ -26,7 +26,7 @@ def register():
     last_name = input ("please ebter your last name:\n")
     password = input ("Please choose a password\n")
     accountnumber = random.randrange (0000000000,9999999999)
-    userID [accountnumber] = [first_name, last_name, email, password]
+    userID = [first_name, last_name, email, password]
     
     print ("your account has been ssccesfully created")
     print ("your account number is  %d" %accountnumber)
@@ -40,7 +40,7 @@ def login():
         accountnumber = random.randrange (0000000000,9999999999)
         accountnumberfromuser = int(input("Please enter your account number:\t"))
         passwordfromuser = input("Please enter your password:\t")
-        for accountnumberfromuser in userID.items():
+        if (passwordfromuser in userID[accountnumberfromuser]):
             if accountnumber == accountnumberfromuser:
                 if(userID[3] == passwordfromuser):
                     isLoginSuccessful = True
@@ -48,7 +48,7 @@ def login():
                 print ("Invalid details")
                 print (accountnumber)
                 print (accountnumberfromuser)
-                print (userID[accountnumberfromuser])
+                print (userID)
 
 
 
@@ -64,4 +64,6 @@ def BankOperations():
 
 init()
 #print (accNoGen())
+
+
 
