@@ -22,8 +22,8 @@ def init ():
 def register():
     print ("*****REGISTER*****")
     email = input ("Please enter your email address: \n")
-    first_name = input ("please ebter your first name:\n")
-    last_name = input ("please ebter your last name:\n")
+    first_name = input ("please enter your first name:\n")
+    last_name = input ("please enter your last name:\n")
     password = input ("Please choose a password\n")
     accountnumber = random.randrange (0000000000,9999999999)
     userID = [first_name, last_name, email, password]
